@@ -4,6 +4,10 @@ import React from 'react';
 import Image from "next/image";
 import Headshot from '@/public/Headshot.jpeg';
 import { motion, useAnimation } from 'framer-motion';
+import Link from "next/link";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
 
 export default function Intro() {
   const topHandControls = useAnimation();
@@ -33,23 +37,30 @@ export default function Intro() {
           </motion.div>
           
           {/* Top Hand */}
-          <motion.span initial={{ opacity: 1, y: 0 }} animate={topHandControls} className="absolute text-5xl -top-7 left-3">
+          <motion.span initial={{ opacity: 1, y: 0 }} animate={topHandControls} className="absolute text-5xl -top-8 left-3">
             🫳
           </motion.span>
           
           {/* Bottom Hand */}
-          <motion.span initial={{ opacity: 1, y: 0 }} animate={bottomHandControls} style={{ scaleX: -1 }} className="absolute text-5xl -bottom-7 right-3">
+          <motion.span initial={{ opacity: 1, y: 0 }} animate={bottomHandControls} style={{ scaleX: -1 }} className="absolute text-5xl -bottom-8 right-3">
             🫴
           </motion.span>
         </div>
       </div>
 
-      <p className="mb-10 mt-5 px-4 text-xl font-medium !leading-[1.5] sm:text-2xl">
+      <motion.p className="mb-10 mt-5 px-4 text-xl font-medium !leading-[1.5] sm:text-2xl" initial={{ opacity: 0, y: 100 }} animate={{opacity: 1, y: 0 }}>
         <span className="font-bold">{`Welcome to the portfolio of Arjun Kundu 👋`}</span> {`I'm a `}
         <span className="font-bold">{`Python Developer`}</span> {`and`} <span className="font-bold">{`DevOps Analyst`}</span> {`with `}
         <span className="font-bold">{`5 years`}</span> {`of experience. `} 
         {`I'm currently seeking `} <span className="underline">{`Development-related`}</span> {` and `} <span className="underline">{`DevOps-related`}</span> {` opportunities.`}
-      </p>
+      </motion.p>
+
+      <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
+        <Link href="#contact" className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">Contact me ✉️ <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" /></Link>
+        <a href="/Resume.pdf" download={true} className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10">Download Resume 💻 <HiDownload className="opacity-60 group-hover:translate-y-1 transition" /></a>
+        <a href="https://www.linkedin.com/in/arjun-kundu/" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"> <BsLinkedin /></a>
+        <a href="https://github.com/kunduarjun" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"> <FaGithubSquare /></a>
+      </motion.div>
     </section>
   )
 }
