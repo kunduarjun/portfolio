@@ -24,7 +24,7 @@ export default function Intro() {
   }, [topHandControls, bottomHandControls]);
 
   return (
-    <section>
+    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
       <div className="flex items-center justify-center">
         <div className="relative">
           {/* Rotating Image */}
@@ -44,12 +44,12 @@ export default function Intro() {
         </div>
       </div>
 
-    <p>
-        <span className="font-bold">{`Welcome to the portfolio of Arjun Kundu 👋`}</span><br/>{`I'm a `}
+      <p className="mb-10 mt-5 px-4 text-xl font-medium !leading-[1.5] sm:text-2xl">
+        <span className="font-bold">{`Welcome to the portfolio of Arjun Kundu 👋`}</span> {`I'm a `}
         <span className="font-bold">{`Python Developer`}</span> {`and`} <span className="font-bold">{`DevOps Analyst`}</span> {`with `}
-        <span className="font-bold">{`5 years`}</span> {`of combined experience. `}<br/>
-        {`As a recent Computer Science graduate from UPEI, I am currently on the lookout for Development-related and DevOps-related opportunities.`}
-    </p>
+        <span className="font-bold">{`5 years`}</span> {`of experience. `} 
+        {`I'm currently seeking `} <span className="underline">{`Development-related`}</span> {` and `} <span className="underline">{`DevOps-related`}</span> {` opportunities.`}
+      </p>
     </section>
   )
 }
