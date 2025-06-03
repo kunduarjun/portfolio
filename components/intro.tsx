@@ -43,6 +43,13 @@ export default function Intro() {
           </motion.span>
         </div>
       </div>
+
+    <p>
+        <span className="font-bold">{`Welcome to the portfolio of Arjun Kundu 👋`}</span><br/>{`I'm a `}
+        <span className="font-bold">{`Python Developer`}</span> {`and`} <span className="font-bold">{`DevOps Analyst`}</span> {`with `}
+        <span className="font-bold">{`5 years`}</span> {`of combined experience. `}<br/>
+        {`As a recent Computer Science graduate from UPEI, I am currently on the lookout for Development-related and DevOps-related opportunities.`}
+    </p>
     </section>
   )
 }
