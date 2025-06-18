@@ -33,7 +33,7 @@ export default function Intro() {
         <div className="relative">
           {/* Rotating Image */}
           <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1, rotate: [0, 360, 0] }} transition={{ duration: 1.5, ease: "easeInOut", }} className="h-24 w-24">
-            <Image src={Headshot} alt="Arjun's Headshot" width="192" height="192" quality="95" priority={true} className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"/>
+            <Image src={Headshot} alt="Arjun's Headshot" width="192" height="192" quality="95" priority={true} className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-[#9F2B68]/70 shadow-[0_0_10px_4px_rgba(159,43,104,0.4)]"/>
           </motion.div>
           
           {/* Top Hand */}
