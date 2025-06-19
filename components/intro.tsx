@@ -52,7 +52,7 @@ export default function Intro() {
         <span className="font-bold">{`Welcome to the portfolio of Arjun Kundu 👋`}</span> {`I'm a `}
         <span className="font-bold">{`Python Developer`}</span> {`and`} <span className="font-bold">{`DevOps Analyst`}</span> {`with `}
         <span className="font-bold">{`5 years`}</span> {`of experience. `} 
-        {`I'm currently seeking `} <span className="underline">{`Development-related`}</span> {` and `} <span className="underline">{`DevOps-related`}</span> {` opportunities.`}
+        {`I'm currently seeking `} <span className="underline">{`DevOps-related`}</span> {` and `} <span className="underline">{`Cybersecurity-related`}</span> {` opportunities.`}
       </motion.h1>
 
       <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
