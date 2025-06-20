@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <motion.section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.175 }}>
-        <SectionHeading>About me 🥸</SectionHeading>
+        <SectionHeading>About Me 🥸</SectionHeading>
         <p className="mb-3">
           A recent computer science co-op graduate from the University of Prince Edward Island &#40;UPEI&#41; with a track record of reliability and a strong understanding of computer fundamentals 🎓.
         </p>
@@ -19,7 +19,7 @@ export default function About() {
           As a recent grad looking to kickstart their tech career, I am currently looking for a <span className="font-medium">full-time position</span> in <span className="underline">DevOps-Related</span> and <span className="underline">Cybersecurity-Related</span> realms, as that is where I beleive my expertise could be best applied 🍀. 
         </p>
         <p>
-          <span className="italic">Outside of developing my computer knowledge</span>, I enjoy going to the gym, watching football, reading &#40;primarily about finance and politics&#41;, and exploring the world 🏋️‍♂️⚽️📕✈️. 
+          <span className="italic">Outside of developing my computer knowledge</span>, I enjoy going to the gym, watching football, reading &#40;primarily about finance and politics&#41;, and exploring the world &#40;<a className="underline text-blue-900 hover:text-red-400 visited:text-purple-600" target="_blank" href="https://www.youtube.com/watch?v=bKNHtNM4quI">Click here to learn about my exchange semester in Finland!</a>&#41; 🏋️‍♂️⚽️📕✈️. 
         </p>
     </motion.section>
   )
