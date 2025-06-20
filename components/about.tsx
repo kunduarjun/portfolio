@@ -16,10 +16,10 @@ export default function About() {
           Java and C. Additionally, I <span className="font-bold underline">love</span> using CLI Tools, API Tools, CI/CD-Tools, and Web Scraping Tools to further enhance automation capabilities 🙌. 
         </p>
         <p className="mb-3">
-          As a recent grad looking to kickstart their tech career, I am currently looking for a <span className="font-medium">full-time position</span> in <span className="underline">DevOps-Related</span> and <span className="underline">Cybersecurity-Related</span> realms, as that is where I beleive my expertise could be best applied 🍀. 
+          As a recent grad looking to kickstart their tech career, I am currently looking for a <span className="font-medium">full-time position</span> in <span className="underline">DevOps-related</span> and <span className="underline">Cybersecurity-related</span> realms, as that is where I believe my expertise would be best utilised 🍀. 
         </p>
         <p>
-          <span className="italic">Outside of developing my computer knowledge</span>, I enjoy going to the gym, watching football, reading &#40;primarily about finance and politics&#41;, and exploring the world &#40;<a className="underline text-blue-900 hover:text-red-400 visited:text-purple-600" target="_blank" href="https://www.youtube.com/watch?v=bKNHtNM4quI">Click here to learn about my exchange semester in Finland!</a>&#41; 🏋️‍♂️⚽️📕✈️. 
+          <span className="italic">Outside of honing my computer knowledge</span>, I enjoy going to the gym, watching football, reading &#40;primarily about finance and politics&#41;, and exploring the world &#40;<a className="underline text-blue-900 hover:text-red-400 visited:text-purple-600" target="_blank" href="https://www.youtube.com/watch?v=bKNHtNM4quI">Click here to learn about my exchange semester in Finland!</a>&#41; 🏋️‍♂️⚽️📕✈️. 
         </p>
     </motion.section>
   )
