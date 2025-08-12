@@ -50,7 +50,7 @@ export default function Intro() {
 
       <motion.h1 className="mb-10 mt-5 px-4 text-xl font-medium !leading-[1.5] sm:text-2xl" initial={{ opacity: 0, y: 100 }} animate={{opacity: 1, y: 0 }}>
         <span className="font-bold">{`Welcome to the portfolio of Arjun Kundu 👋`}</span> {`I'm a `}
-        <span className="font-bold">{`Backend Developer`}</span> {`and`} <span className="font-bold">{`DevOps Analyst`}</span> {`with over `}
+        <span className="font-bold">{`Backend Developer`}</span>{`, `} <span className='font-bold'>{`Cybersecurity Mentor`}</span>{`, and`} <span className="font-bold">{`DevOps Analyst`}</span> {`with over `}
         <span className="font-bold">{`2 years`}</span> {`of experience. `} 
         {`I'm currently seeking `} <span className="underline">{`DevOps-related`}</span> {` and `} <span className="underline">{`Cybersecurity-related`}</span> {` opportunities.`}
       </motion.h1>

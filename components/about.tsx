@@ -13,10 +13,10 @@ export default function About() {
         </p>
         <p className="mb-3">
           Some guiding principles of my tech journey thus far have been <span className="italic">persistence</span> and <span className="italic">curiosity</span> &#40;and perhaps a bit of stubbornness at times as well 🐥&#41;. A well-versed Python developer, I also have experience working with languages such as 
-          Java and C. Additionally, I <span className="font-bold underline">love</span> using CLI Tools, API Tools, CI/CD-Tools, and Web Scraping Tools to further enhance automation capabilities 🙌. 
+          Java and C. I also <span className="font-bold underline">love</span> using CLI, API, CI/CD, and Web Scraping tools to further enhance automation capabilities 🙌. 
         </p>
         <p className="mb-3">
-          As a recent grad looking to kickstart their tech career, I am currently looking for a <span className="font-medium">full-time position</span> in <span className="underline">DevOps-related</span> and <span className="underline">Cybersecurity-related</span> realms, as that is where I believe my expertise would be best utilised 🍀. Other areas of tech that interest me include Blockchain and FinTech 💫. 
+          As a recent grad looking to kickstart their tech career, I am currently looking for a <span className="font-medium">full-time position</span> in <span className="underline">DevOps-related</span> and <span className="underline">Cybersecurity-related</span> realms, as that is where I believe my expertise would be best utilised 🍀. Blockchain and FinTech also captivate me 💫. 
         </p>
         <p>
           <span className="italic">When I'm not sitting in front of a screen</span>, I enjoy going to the gym, watching football, reading, and exploring the world &#40;<a className="underline text-blue-900 hover:text-red-400 visited:text-purple-600" target="_blank" href="https://www.youtube.com/watch?v=bKNHtNM4quI">Click here to learn about my exchange semester in Finland!</a>&#41; 🏋️‍♂️⚽️📕✈️. 
