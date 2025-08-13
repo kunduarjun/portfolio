@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <motion.section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.175 }}>
+    <motion.section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-0" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.175 }}>
         <SectionHeading>About Me 🥸</SectionHeading>
         <p className="mb-3">
           A recent computer science co-op graduate from the University of Prince Edward Island &#40;UPEI&#41; with a track record of reliability and strong communication skills 🎓.
