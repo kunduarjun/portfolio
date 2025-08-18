@@ -13,7 +13,7 @@ export default function About() {
         </p>
         <p className="mb-3">
           Some guiding principles of my tech journey thus far have been <Italic>persistence</Italic> and <Italic>curiosity</Italic> &#40;and perhaps a bit of stubbornness at times as well 🐥&#41;. A well-versed Python developer, I also have experience working with languages such as 
-          Java and C. I enjoy using <Italic>CLIs</Italic>, <Italic>APIs</Italic>, <Italic>CI/CD</Italic>, and <Italic>Web Scraping</Italic> to further enhance automation capabilities 🙌. 
+          Java and C. I enjoy using <Italic>CLIs</Italic>, <Italic>APIs</Italic>, <Italic>CI/CD tools</Italic>, <Italic>AI tools</Italic>, and <Italic>Web Scraping tools</Italic> to enhance automation capabilities 🙌. 
         </p>
         <p className="mb-3">
           As a recent grad looking to kickstart their tech career, I am currently looking for a <span className="font-medium">full-time position</span> in <span className="underline">DevOps-related</span> and <span className="underline">Cybersecurity-related</span> realms, as that is where I believe my expertise would be best utilised 🍀. Blockchain and FinTech also captivate me 💫. 
