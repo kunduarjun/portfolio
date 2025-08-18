@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import ytReduxImage from "@/public/ytReduxImage.png"; 
 
 export const links = [
   {
@@ -34,6 +35,12 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "YouTube Redux Firefox Plugin",
+    description: "This is a simple Firefox Browser Extension that allows for users to clean up their YouTube interface to allow for more focused watching.",
+    tags: ["JavaScript", "JSON", "HTML", "CSS", "Browser Extension"],
+    imageUrl: ytReduxImage 
+  }
 ] as const;
 
 export const skillsData = [
