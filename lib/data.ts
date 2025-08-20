@@ -44,5 +44,26 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "Python",
+  "Java",
+  "C",
+  "Node.js",
+  "Git",
+  "Docker",
+  "SQL",
+  "PowerShell",
+  "Linux",
+  "Windows Server",
+  "Active Directory",
+  "Wireshark",
+  "REST APIs",
+  "Postman",
+  "Selenium",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "JSON",
+  "Next.js",
+  "Flask"
 ] as const;
 
