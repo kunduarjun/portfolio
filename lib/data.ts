@@ -1,6 +1,5 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { CgWorkAlt, CgData } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import ytReduxImage from "@/public/ytReduxImage.png"; 
 
@@ -32,6 +31,27 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: "Computer Science Student",
+    location: "Charlottetown, PE",
+    description: "Graduated with first-class standing. Recognized for contributions to the university community and academic excellence.",
+    icon: React.createElement(LuGraduationCap, { style: { color: "#4b5563" } }),
+    date:"2020 - 2025",
+  },
+  {
+    title: "DevOps Analyst (Co-op)",
+    location: "Charlottetown, PE",
+    description: "Performed system administration tasks, managed various platforms used within CI/CD pipeline, and led the migration of project management platforms. Awarded 2024 Rookie of the Year.",
+    icon: React.createElement(CgWorkAlt),
+    date:"2023 - 2025",
+  },
+  {
+    title: "Cyber Security Mentor",
+    location: "Charlottetown, PE",
+    description: "Prepare middle and high school students for global CyberPatriot competition. Provide mentorship on cyber security concepts, teamwork, and problem-solving skills.",
+    icon: React.createElement(CgData),
+    date:"2023 - Present",
+  },
 ] as const;
 
 export const projectsData = [
