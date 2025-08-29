@@ -9,9 +9,14 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5); 
+  const {
+    setActiveSection,
+    setTimeOfLastClick, 
+  } = useActiveSectionContext(); 
 
   const topHandControls = useAnimation();
   const bottomHandControls = useAnimation();
@@ -59,7 +64,9 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
-        <Link href="#contact" className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">Contact me ✉️ <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" /></Link>
+        <Link href="#contact" onClick={() => {
+          setActiveSection("Contact"); setTimeOfLastClick(Date.now());
+        }} className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">Contact me ✉️ <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" /></Link>
         <a href="/Resume.pdf" download={true} className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10">Download Resume 💻 <HiDownload className="opacity-60 group-hover:translate-y-1 transition" /></a>
         <a href="https://www.linkedin.com/in/arjun-kundu/" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"> <BsLinkedin /></a>
         <a href="https://github.com/kunduarjun" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"> <FaGithubSquare /></a>
