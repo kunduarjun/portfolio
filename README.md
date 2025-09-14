@@ -1,1 +1,1 @@
-Personal portfolio, accessible at <a href="https://about-arjun-kundu.vercel.app/" target="_blank" rel="noopener noreferrer">about-arjun-kundu.vercel.app</a>
+Personal portfolio, accessible at https://about-arjun-kundu.vercel.app/ (right-click to open in new tab) 
