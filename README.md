@@ -1,1 +1,1 @@
-In-progress personal portfolio. Built using Next.js 
+Personal portfolio, accessible at https://about-arjun-kundu.vercel.app/ 
