@@ -35,7 +35,7 @@ export const experiencesData = [
     title: "Computer Science Student",
     location: "Charlottetown, PE",
     description: "Graduated with first-class standing. Recognized for contributions to the university community and academic excellence.",
-    icon: React.createElement(LuGraduationCap, { style: { color: "#4b5563" } }),
+    icon: React.createElement(LuGraduationCap),
     date:"2020 - 2025",
   },
   {
