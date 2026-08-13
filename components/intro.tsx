@@ -24,7 +24,7 @@ function MirroredEmoji({ emoji, size = 48 }: { emoji: string; size?: number }) {
     canvas.height = size * dpr;
     ctx.scale(dpr, dpr);
 
-    ctx.font = `${size * 0.8}px system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji"`;
+    ctx.font = `${size * 0.95}px system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji"`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
 
