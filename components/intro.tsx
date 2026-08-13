@@ -51,7 +51,7 @@ export default function Intro() {
           
           {/* Bottom Hand */}
           <motion.span initial={{ opacity: 1, y: 0 }} animate={bottomHandControls} className="absolute text-5xl -bottom-8 right-3">
-            <span style={{ display: 'inline-block', transform: 'scaleX(-1)' }}>🫴</span>
+            🫴
           </motion.span>
         </div>
       </div>
