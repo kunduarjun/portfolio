@@ -1,1 +1,1 @@
-Personal portfolio, accessible at https://about-arjun-kundu.vercel.app/ (right-click to open in new tab) 
+Personal portfolio, accessible at https://about-arjun-kundu.netlify.app/ (right-click to open in new tab) 
