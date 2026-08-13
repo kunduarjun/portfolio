@@ -11,6 +11,31 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
 
+function MirroredEmoji({ emoji, size = 48 }: { emoji: string; size?: number }) {
+  const canvasRef = React.useRef<HTMLCanvasElement>(null);
+
+  React.useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas?.getContext('2d');
+    if (!canvas || !ctx) return;
+
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = size * dpr;
+    canvas.height = size * dpr;
+    ctx.scale(dpr, dpr);
+
+    ctx.font = `${size * 0.8}px system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji"`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    ctx.translate(size, 0);
+    ctx.scale(-1, 1);
+    ctx.fillText(emoji, size / 2, size / 2);
+  }, [emoji, size]);
+
+  return <canvas ref={canvasRef} style={{ width: size, height: size }} />;
+}
+
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5); 
   const {
@@ -50,8 +75,8 @@ export default function Intro() {
           </motion.span>
           
           {/* Bottom Hand */}
-          <motion.span initial={{ opacity: 1, y: 0 }} animate={bottomHandControls} className="absolute text-5xl -bottom-8 right-3">
-            🫴
+          <motion.span initial={{ opacity: 1, y: 0 }} animate={bottomHandControls} className="absolute -bottom-8 right-3">
+            <MirroredEmoji emoji="🫴" />
           </motion.span>
         </div>
       </div>
